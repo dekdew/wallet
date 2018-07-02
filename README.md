@@ -7,7 +7,7 @@
 
 ## run
 
- - `mkdir -p /data/db`
+ - `sudo mkdir -p /data/db`
  - `sudo mongod`
  - `testrpc` or `ganache-cli`
  - `truffle migrate --reset`
