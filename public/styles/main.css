@@ -1,0 +1,290 @@
+body{
+  background-color: #2B2F3C;
+}
+
+.container{
+  /*border:1px solid white;*/
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex; 
+}
+.backbox{  
+  background-color: #F17C35;
+  background-image: linear-gradient(147deg, #F17C35 0%, #E2336E 90%);
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  transform: translate(0,-50%);
+  top:50%;
+  display: inline-flex;
+}
+
+.frontbox-l{
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  right:0;
+  margin-right: 0%;
+  margin-left: 3%;
+  transition: right .8s ease-in-out;
+}
+
+.frontbox-s{
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  margin-right: 3%;
+  margin-left: 5%;
+  transition: left .8s ease-in-out;
+}
+
+.moving-l{
+  right:45%;
+}
+
+.moving-s{
+  left:45%;
+}
+
+.loginMsg, .signupMsg{
+  width: 50%;
+  height: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.loginMsg .title,
+.signupMsg .title{
+  font-family: 'Questrial', sans-serif;
+  font-size: 22px;
+}
+
+.loginMsg p,
+.signupMsg p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.textcontent{
+  color:white;
+  margin-top:65px;
+  margin-left: 12%;
+}
+
+.loginMsg button,
+.signupMsg button {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  border-radius: 10px;
+  color:white;
+  font-size: 12px;
+  box-sizing: content-box;
+  font-weight: 300;
+  padding:10px;
+  margin-top: 20px;
+}
+
+/* front box content*/
+.login, .signup{
+  padding: 20px;
+  text-align: center;
+}
+
+.login h2,
+.signup h2 {
+  color: #D64541;
+  font-family: 'Questrial', sans-serif;
+  font-size:23px;
+}
+
+.inputbox{
+  margin-top:30px; 
+}
+.login input, 
+.signup input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom:20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  padding: 1em;
+}
+
+.login button,
+.signup button{
+  background-color: #D64541;
+  border: none;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 10px;
+  width: 60px;
+  position: absolute;
+  right:30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+/* Fade In & Out*/
+.login p {
+  cursor: pointer;
+  color:#404040;
+  font-size:15px;
+}
+
+.loginMsg, .signupMsg{
+  /*opacity: 1;*/
+  transition: opacity .8s ease-in-out;
+}
+
+.visibility{
+  opacity: 0;
+}
+
+.hide{
+  display: none;
+}
+
+.band {
+  position: absolute;
+  top:5%;
+  left:50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  align-items: center;
+}
+
+.band:link {
+  text-decoration: none;
+}
+
+.band h1 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 3.5vw;
+  color: white;
+}
+
+.band .logo {
+  height: 5.5vw;
+}
+
+.home {
+  position: absolute;
+  height: 25vh;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.home h1 {
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  width: 100%;
+  font-size: 8vw;
+  margin-bottom: 0;
+}
+
+.home p {
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  width: 100%;
+  font-size: 1vw;
+}
+
+.home .logo {
+  width: 15vw;
+}
+
+.home button {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid .1vw white;
+  border-radius: .8vw;
+  color:white;
+  font-size: 1vw;
+  box-sizing: content-box;
+  padding:.8vw;
+  margin: 2% 3%;
+}
+
+.home button:hover {
+  border: solid .1vw transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(147deg, #F17C35 0%, #E2336E 90%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #2B2F3C inset;
+}
+
+.checkout {
+  margin: 23vh auto 30px;
+  position: relative;
+  width: 460px;
+  background: white;
+  border-radius: 15px;
+  padding: 160px 45px 30px;
+}
+
+.checkout button {
+  background-color: #D64541;
+  border: none;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 10px;
+  width: 60px;
+  position: absolute;
+  right:30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+.checkout #hello {
+  display: inline;
+}
+
+.checkout p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.checkout h1 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  display: inline;
+}
+
+.credit-card-box {
+  width: 400px;
+  position: absolute;
+  top: -112px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

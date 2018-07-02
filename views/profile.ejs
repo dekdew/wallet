@@ -1,0 +1,18 @@
+<% var title = 'Wallet' %>
+<% include partials/head %>
+
+<div class="checkout">
+  <div class="credit-card-box">
+    <img src="picture/card.svg" alt="">
+  </div>
+  <p id="hello">Hello,</p>
+  <h1><%= user.local.username %></h1>
+  <a href="/logout">
+    <button>Log Out</button>
+  </a>
+  <p>balance: <h1 id="token"></h1></p>
+  <form action="/send" method="POST">
+  </form>
+</div>
+
+<% include partials/foot %>
